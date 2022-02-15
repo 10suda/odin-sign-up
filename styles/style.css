@@ -127,3 +127,51 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-content: stretch;
+  height: 100%;
+}
+
+body .main-left {
+  background: url(../images/background-photo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+body .main-right {
+  display: flex;
+  flex-direction: column;
+}
+body .main-right .main-right-top {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+}
+body .main-right .main-right-middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  gap: 2rem;
+}
+body .main-right .main-right-middle form {
+  display: flex;
+  gap: 4rem;
+}
+body .main-right .main-right-middle form div {
+  display: flex;
+  flex-direction: column;
+}
+body .main-right .main-right-bot {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
